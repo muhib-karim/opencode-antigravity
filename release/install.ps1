@@ -53,7 +53,7 @@ try {
 Write-Host "`n🎉 Installation Complete!" -ForegroundColor Green
 Write-Host ""
 Write-Host "Features enabled:" -ForegroundColor Cyan
-Write-Host "  ✅ Antigravity Manager integration (infinite quota)" -ForegroundColor White
+Write-Host "  ✅ Antigravity Manager integration (provider quotas apply)" -ForegroundColor White
 Write-Host "  ✅ Clipboard image paste (Ctrl+V)" -ForegroundColor White
 Write-Host "  ✅ OpenCode free models (unchanged)" -ForegroundColor White
 Write-Host ""
