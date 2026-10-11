@@ -1,53 +1,55 @@
-<div align="center">
+
 
 # ☕ OpenCode + Antigravity Integration
 
-### Unlock **Infinite AI Quota** in OpenCode with Zero Configuration
+### Connect OpenCode to an Antigravity-managed provider
 
-<br>
+
 
 [![Live Website](https://img.shields.io/badge/🌐_Live_Demo-Visit_Site-e8d5b7?style=for-the-badge)](https://opencode-antigravity.vercel.app)
 [![Support on Ko-Fi](https://img.shields.io/badge/☕_Support-Ko--Fi-ff5e5b?style=for-the-badge)](https://ko-fi.com/ai_dev_2024)
 
-<br>
+
 
 [![Version](https://img.shields.io/badge/Version-1.2.0-1a1614?style=flat-square)](CHANGELOG.md)
 [![License](https://img.shields.io/badge/License-MIT-1a1614?style=flat-square)](LICENSE)
-[![GitHub Stars](https://img.shields.io/github/stars/ai-dev-2024/opencode-antigravity?style=flat-square&color=e8d5b7)](https://github.com/ai-dev-2024/opencode-antigravity)
+[![GitHub Stars](https://img.shields.io/github/stars/muhib-karim/opencode-antigravity?style=flat-square&color=e8d5b7)](https://github.com/muhib-karim/opencode-antigravity)
 [![ZAI Community](https://img.shields.io/badge/Part%20of-ZAI%20Start--up%20Community-8b5cf6?style=flat-square)](https://startup.z.ai/)
 
-</div>
+
 
 ---
 
-<div align="center">
+
 
 ## ✨ Why This Integration?
 
-</div>
+
 
 | Feature | Description |
 |:---:|:---|
-| ♾️ **Infinite Quota** | Automatically rotate through pooled Google/Claude accounts managed by Antigravity |
+| **Account routing** | Integrates with the configured Antigravity account pool. Provider quotas and rate limits still apply. |
 | 📋 **Clipboard Image Paste** | Press `Ctrl+V` to paste screenshots directly into your AI prompts |
-| ⚡ **Zero Latency** | Direct HTTP connection to local proxy (Port 8888) - no cloud roundtrips |
-| 🔒 **Privacy First** | All processing happens locally. Your code never leaves your machine |
-| 🆓 **Free Models Included** | OpenCode's built-in free models continue working seamlessly |
+| **Local proxy connection** | Connects OpenCode to a local proxy on port 8888. Remote provider latency still applies. |
+| **Data handling** | The proxy runs locally. Prompts and code sent for inference may be forwarded to the configured remote provider. Review that provider's data policy. |
+| 🆓 **Free Models Included** | OpenCode's built-in free models remain available when supported by the installed OpenCode version |
 
 ---
 
-## 🚀 One-Click Installation
+## Installation
 
-Open **PowerShell as Administrator** and run:
+Inspect the installer before running it. Use elevated PowerShell only when an installation step requires it:
 
 ```powershell
-irm https://raw.githubusercontent.com/ai-dev-2024/opencode-antigravity/main/release/install.ps1 | iex
+Invoke-WebRequest https://raw.githubusercontent.com/muhib-karim/opencode-antigravity/main/release/install.ps1 -OutFile install.ps1
+# Review install.ps1 before running it.
+.\install.ps1
 ```
 
-**Or clone manually:**
+Clone and inspect the local installer instead of piping downloaded code directly into execution:
 
 ```bash
-git clone https://github.com/ai-dev-2024/opencode-antigravity.git
+git clone https://github.com/muhib-karim/opencode-antigravity.git
 cd opencode-antigravity
 ./release/install.ps1
 ```
@@ -74,13 +76,13 @@ OpenCode v1.1.47+ supports clipboard image paste, but **Windows Terminal interce
 
 ## 📸 Demo
 
-<div align="center">
+
 
 **Visit the live demo to see the integration in action:**
 
 [![Website Screenshot](https://img.shields.io/badge/🖼️_View_Demo-opencode--antigravity.vercel.app-e8d5b7?style=for-the-badge)](https://opencode-antigravity.vercel.app)
 
-</div>
+
 
 ---
 
@@ -88,11 +90,11 @@ OpenCode v1.1.47+ supports clipboard image paste, but **Windows Terminal interce
 
 If this integration saves you time and API costs, please consider supporting development:
 
-<div align="center">
+
 
 [![Ko-Fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/ai_dev_2024)
 
-</div>
+
 
 ---
 
@@ -102,6 +104,5 @@ MIT License - see [LICENSE](LICENSE) for details.
 
 ---
 
-<div align="center">
+
 <sub>Built with ☕ by the community</sub>
-</div>
